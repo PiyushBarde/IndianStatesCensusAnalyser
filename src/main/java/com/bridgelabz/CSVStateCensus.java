@@ -12,7 +12,7 @@ import com.opencsv.bean.CsvToBeanBuilder;
 public class CSVStateCensus {
 	private int numberOfEnteries;
 
-	public int loadIndiaCensusData(String csvFilePath) {
+	public int loadIndiaCensusData(String csvFilePath) throws CensusAnalyserException {
 			Reader reader = null;
 			try {
 				reader = Files.newBufferedReader(Paths.get(csvFilePath));
